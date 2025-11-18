@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function Form() {
-    const [weight, setWeight] = useState();
-    const [height, setHeight] = useState();
+    const [weight, setWeight] = useState("");
+    const [height, setHeight] = useState("");
 
     // função para formatar a altura com ponto decimal //! da pra usar em outras ocasições
     function formatHeight(value) {
@@ -15,7 +15,7 @@ function Form() {
         const sliceOne = value.slice(0, value.length - 2);
         const sliceTwo = value.slice(value.length - 2);
 
-        return `${sliceOne},${sliceTwo}`;
+        return `${sliceOne}.${sliceTwo}`;
     }
 
     const handleChange = (e) => {
@@ -34,11 +34,11 @@ function Form() {
         <form>
             <div>
                 <label> Weight (kg): </label>
-                <input value={weight} onBlur={textToNumberWeight} maxLength={3} type="text" placeholder='E.g.: 70 Kg' />
+                <input value={weight} onChange={textToNumberWeight} maxLength={3} type="text" placeholder='E.g.: 70 Kg' />
             </div>
             <div>
                 <label> Height (m): </label>
-                <input value={height} onBlur={handleChange} maxLength={4} type="text" placeholder='E.g.: 1.80 m' />
+                <input value={height} onChange={handleChange} maxLength={4} type="text" placeholder='E.g.: 1.80 m' />
             </div>
         </form>
     )
