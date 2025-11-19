@@ -1,0 +1,39 @@
+
+.inputs {
+    padding: 3px;
+    margin-top: 10px;
+    max-width: 100px;
+    border: rgb(118, 118, 118) 2px solid;
+    border-radius: 5%;
+}
+
+.buttonSubmit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttonSubmit:hover {
+    transition: ease-out 0.3s;
+    background-color: #010a00;
+    color: white;
+}
+
+.underWeight {
+    background-color: darkslategrey;
+    padding: 2px;
+    border-radius: 5px;
+}
+.normalWeight {
+    background-color: green;
+    padding: 2px;
+    border-radius: 5px;
+}
+.overWeight {
+    background-color: sienna;
+    padding: 2px;
+    border-radius: 5px;
+}
+.obesityRange {
+    background-color: brown;
+    padding: 2px;
+    border-radius: 5px;
+}
