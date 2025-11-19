@@ -66,8 +66,7 @@ function App() {
 
 
   return (
-
-    <>
+    <> {/*⚠⚠ Eu sei que o projeto está  em inglês, mas é porque eu quero praticar meu código em inglês ⚠⚠*/}
       <div>
         <h1>BMI Calculator</h1>
         <form>
